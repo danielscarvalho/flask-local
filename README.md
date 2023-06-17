@@ -34,3 +34,8 @@ sh ./run.sh
 - Tem que liberar a porta 5000 no firewall, normalmente há uma interface WEB administrativa para isso
 - Note que importamos o projeto usando HTTPS do GitHub. Apenas para não ter que criar e registrar uma chave ssh no servidor (VPS - maquina virtual)
 - Estas operações podem ser bloqueadas pelo Proxy/Firewall da empresa ou faculdade... o sistema pode identificar como uma ameaça ou ataque hacker
+- O acesso a nossa WEB API com Flask não em SSL (segurança) implementado, não tem senha nem token e nem criptografia
+
+Este serviço temporário está acessível em:
+
+http://lab.code.eng.br:5000/
