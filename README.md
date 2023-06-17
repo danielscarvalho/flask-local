@@ -29,3 +29,7 @@ git clone https://github.com/danielscarvalho/flask-local.git
 cd flask-local
 sh ./run.sh
 ```
+
+- No Oracle Cloud o firewall iptables já vem instalado por padrão no servidor (VSP), tem que liberar a porta 5000
+- Tem que liberar a porta 5000 no firewall, normalmente há uma interface WEB administrativa para isso
+- Note que importamos o projeto usando HTTP do GitHub, apenas para não ter que criar e registrar uma chave ssh para o servidor (VSP) do GitHub
