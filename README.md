@@ -18,7 +18,7 @@ ____
 
 ## Dicas
 
-Comandos para preparar o ambiente em uma máquina virtual (VSP):
+Comandos para preparar o ambiente em uma máquina virtual (VSP) Linux:
 
 ```bash
 sudo apt install curl
