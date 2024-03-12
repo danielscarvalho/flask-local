@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     now = datetime.now()
-    return 'Hello from Flask, by Insper DS! - ' + str(now)
+    return 'Hello from Flask, by Insper DS! v2024 - ' + str(now)
 
 @app.route('/core')
 def core():
@@ -21,7 +21,7 @@ def core():
 def add(a, b):
     a_float=0
     b_float=0
-
+    
     try:
        a_float = float(a)
     except:
@@ -33,6 +33,24 @@ def add(a, b):
        return "Ops! Not a float: " + b
     
     return str(a_float + b_float)
+
+@app.route('/power/<a>/<b>')
+def power(a, b):
+    a_float=0
+    b_float=0
+    
+    try:
+       a_float = float(a)
+    except:
+       return "Ops! Not a float: " + a
+    
+    try:
+       b_float = float(b)
+    except:
+       return "Ops! Not a float: " + b
+    
+    return str(a_float ** b_float)
+
 
 @app.route('/area')
 def myarea():
